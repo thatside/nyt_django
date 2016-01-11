@@ -3,5 +3,8 @@ from django.http import HttpResponse, HttpResponseRedirect
 
 
 def index(request):
-    return HttpResponse("Hello, my dear")
+    context = {
+        'message': 'I love you, my dear',
+    }
+    return render(request, 'nyt_movies/index.html', context=context)
 
