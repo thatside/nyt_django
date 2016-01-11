@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>purpurpur ^^</title>
-</head>
-<body>
-    {{ message }}
-</body>
-</html>
+{% extends 'nyt_movies/layout.html' %}
+
+{% block content %}
+    <p>{{ message }}</p>
+    {% for item in results %}
+        <p>{{ item.name }}</p>
+    {% endfor %}
+{% endblock %}
