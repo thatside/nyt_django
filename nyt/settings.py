@@ -25,8 +25,6 @@ SECRET_KEY = "0691(4cxb#gg#%l3_cbx27&w*#gzluy%p)*zbx+pn1fyfwe=_u"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-TEMPLATE_DEBUG = True
-
 
 # Application definition
 
@@ -37,6 +35,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'nyt_movies.apps.NytMoviesConfig'
 )
 
 MIDDLEWARE_CLASSES = (
