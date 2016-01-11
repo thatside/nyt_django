@@ -1,1 +1,0 @@
-web: gunicorn nyt.wsgi --log-file -
